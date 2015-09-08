@@ -1,0 +1,99 @@
+.offset-top-fixed-div{
+    margin-top: 40px;
+}
+
+#smallNavTop a{
+    padding: 5px 20px 5px 0;
+    color: #c2daeb;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+i.userIcon{
+    display: inline-block;
+    background: url(../img/navUser.png) center center no-repeat;
+    width: 13px;
+    height: 14px;
+    background-size: 13px auto;
+    margin: -1px 8px;
+}
+nav.nav-padding-top{
+    margin-top: 30px;
+    height: 80px;
+}
+nav.nav-padding-top a{
+    color: #c2daeb;
+    padding: 22px 15px;
+}
+nav.nav-padding-top .container{
+    height: 100%;
+}
+
+.positionMiddle{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-left: 68px;
+}
+
+.positionMiddle a{
+    padding: 5px 15px 5px 0 !important;
+    color: #333;
+    margin: 24px auto;
+    font-size: 17px;
+}
+.nav-button{
+    width: 80px;
+    height: 80px;
+    border-left: 1px solid #C7D8DD;
+    cursor: pointer;
+}
+.nav-button.btn-setting{
+    background: url(../img/settings.png) center center no-repeat;
+    background-size: 40px auto;
+}
+.nav-button.btn-more{
+    background: url(../img/menu.png) center center no-repeat;
+    background-size: 37px auto;
+}
+
+.userGroup{
+    margin: 10px auto;
+}
+.userGroup h4{
+    margin: 10px auto;
+    font-weight: 300;
+}
+
+.objectItem #item1{
+    list-style-image: url(../img/li1.png);
+}
+.objectItem #item2{
+    list-style-image: url(../img/li2.png);
+}
+.objectItem #item3{
+    list-style-image: url(../img/li3.png);
+}
+.objectItem #item4{
+    list-style-image: url(../img/li4.png);
+}
+
+.no-list-style li{
+    list-style: none;
+}
+.no-list-style{
+    margin-left: -60px;
+}
+
+.gray-background{
+    background-color: #F2F3F3;
+    height: 800px;
+}
+
+.hDivider{
+    width: 100%;
+    margin: 15px auto;
+    background: #BACED1;
+    height: 1px;
+}

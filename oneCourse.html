@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Online Edu System</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="assets/css/non-responsive.css" rel="stylesheet">-->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="courseWarp">
+    <div class="container courseBoxWrapper">
+        <div class="row courseVideoWrapper">
+            <div class="col-xs-8">
+                <iframe src="https://www.youtube.com/embed/CMWFmjlB8v0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xs-4 no-padding">
+                <div class="commentList">
+                    <div class="oneCommentWrap row">
+                        <div class="col-md-8">
+                            Peter Parker (Teacher):
+                        </div>
+                        <div class="col-md-4 pull-right text-right">
+                            6:34
+                        </div>
+                        <div class="col-xs-12">
+                            <p>Let me know any questions if they come up</p>
+                        </div>
+                    </div>
+                    <div class="hDivider-sm"></div>
+                    <div class="oneCommentWrap row">
+                        <div class="col-md-8">
+                            Terry Hamilton (Student):
+                        </div>
+                        <div class="col-md-4 pull-right text-right">
+                            6:38
+                        </div>
+                        <div class="col-xs-12">
+                            <p>Can you repeat the last part about binomials?</p>
+                        </div>
+                    </div>
+                    <div class="hDivider-sm"></div>
+                    <div class="oneCommentWrap row">
+                        <div class="col-md-8">
+                            Terry Hamilton (Student):
+                        </div>
+                        <div class="col-md-4 pull-right text-right">
+                            6:39
+                        </div>
+                        <div class="col-xs-12">
+                            <p>Can you repeat the last part about binomials?</p>
+                        </div>
+                    </div>
+                    <div class="hDivider-sm"></div>
+                </div>
+                <div class="commentArea">
+                    <h6>Your comment:</h6>
+                    <textarea name="" id="videoCommentArea"></textarea>
+                    <div class="buttonWrap pull-right">
+                        <button class="btn btn-default">Cancel</button>
+                        <button class="btn btn-primary">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h4>Description</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in blandit nunc. Integer ornare
+                    eros quis
+                    lobortis eleifend. Fusce ut lorem et est imperdiet vehicula. Aliquam auctor ante nec dignissim
+                    egestas.
+                    Pellentesque pellentesque sapien eget lorem vestibulum semper. In tempus molestie lorem. Nam eu
+                    nulla
+                    pulvinar, facilisis diam sed, eﬃcitur odio. Donec hendrerit at elit et ornare. Sed tincidunt
+                    fringilla
+                    metus, non suscipit sapien aliquam in. Integer pharetra fermen</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <h5>How helpful is this class?</h5>
+                <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star fa-3x" data-empty="fa fa-star-o fa-3x" data-fractions="3"/>
+
+            </div>
+            <div class="col-xs-8">
+                <h5>How would it be improved?</h5>
+                <textarea name="" id="commentArea" cols="30" rows="10"></textarea>
+                <button class="btn btn-primary pull-right">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/js/jquery1113.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootrating.js"></script>
+<script>
+    $(function () {
+        $('input.check').on('change', function () {
+            alert('Rating: ' + $(this).val());
+        });
+        $('#programmatically-set').click(function () {
+            $('#programmatically-rating').rating('rate', $('#programmatically-value').val());
+        });
+        $('#programmatically-get').click(function () {
+            alert($('#programmatically-rating').rating('rate'));
+        });
+        $('.rating-tooltip').rating({
+            extendSymbol: function (rate) {
+                $(this).tooltip({
+                    container: 'body',
+                    placement: 'bottom',
+                    title: 'Rate ' + rate
+                });
+            }
+        });
+        $('.rating-tooltip-manual').rating({
+            extendSymbol: function () {
+                var title;
+                $(this).tooltip({
+                    container: 'body',
+                    placement: 'bottom',
+                    trigger: 'manual',
+                    title: function () {
+                        return title;
+                    }
+                });
+                $(this).on('rating.rateenter', function (e, rate) {
+                    title = rate;
+                    $(this).tooltip('show');
+                })
+                        .on('rating.rateleave', function () {
+                            $(this).tooltip('hide');
+                        });
+            }
+        });
+        $('.rating').each(function () {
+            $('<span class="label label-default"></span>')
+                    .text($(this).val() || ' ')
+                    .insertAfter(this);
+        });
+        $('.rating').on('change', function () {
+            $(this).next('.label').text($(this).val());
+        });
+    });
+</script>
+</body>
+</html>

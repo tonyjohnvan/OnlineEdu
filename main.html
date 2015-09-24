@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Online Edu System</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/non-responsive.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div id="smallNavTop">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="#">Applications</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Student & Teacher list</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Class list</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="userIcon"></i>Register / Sign in</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top nav-padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"> <img src="assets/img/logo.png" alt="Brand"/></a>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <ul class="nav navbar-nav positionMiddle">
+                    <li class=""><a href="#">Applications</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">Student & Teacher list</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">Class list</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <span class="nav-button pull-right btn-more"></span>
+                <span class="nav-button pull-right btn-setting"></span>
+            </div>
+        </div>
+
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container offset-top-fixed-div">
+    <div class="row">
+        <div class="col-xs-3">
+            <div id="sideGroup1">
+                <h3>My Feed</h3>
+                <div class="userGroup">
+                    <img src="assets/img/user.png" alt="" class="center-block"/>
+                    <h4 class="text-center">Selena Kyle</h4>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/sideStatus.png" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                            <ul class="objectItem">
+                                <li id="item1">Algebra</li>
+                                <li id="item2">Trigonometry</li>
+                                <li id="item3">Complex Numbers</li>
+                                <li id="item4">Calculus</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-2">
+                            <ul class="no-list-style">
+                                <li>80%</li>
+                                <li>98%</li>
+                                <li>64%</li>
+                                <li>84%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hDivider"></div>
+
+            <div id="sideGroup2">
+                <h3>Fellow Wiz’s</h3>
+                <div class="row smallUserImgGroup">
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                </div>
+                <div class="search-box-group row center-block">
+                    <input type="text" class="searchBox col-xs-10" placeholder="Search"/>
+                    <button class="searchButton col-xs-2"><img src="assets/img/search.png" alt=""/></button>
+                </div>
+            </div>
+            <div class="hDivider"></div>
+
+            <div id="sideGroup3">
+                <h3>Fellow Wiz’s</h3>
+                <div class="row smallUserImgGroup">
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="assets/img/userSmall.png" alt="" class="smallUserImg"/>
+                    </div>
+                </div>
+                <div class="search-box-group row center-block">
+                    <input type="text" class="searchBox col-xs-10" placeholder="Search"/>
+                    <button class="searchButton col-xs-2"><img src="assets/img/search.png" alt=""/></button>
+                </div>
+            </div>
+            <div class="hDivider"></div>
+
+            <div id="sideGroup4">
+                <div class="tree well">
+                    <ul>
+                        <li>
+                            <span><i class="icon-folder-open"></i> </span> <a href="">Calculus</a>
+                            <ul>
+                                <li>
+                                    <span><i class="icon-minus-sign"></i> </span> <a href="">Limits</a>
+                                    <ul>
+                                        <li>
+                                            <span><i class="icon-leaf"></i> </span> <a href="">Session 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span><i class="icon-minus-sign"></i> </span> <a href="">Derivatives</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span><i class="icon-folder-open"></i> </span> <a href="">Algebra II</a>
+                            <ul>
+                                <li>
+                                    <span><i class="icon-leaf"></i> </span> <a href="">Complex Numbers</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-xs-6 centerWrap">
+            <div class="">
+                <div class="row pull-right">
+                    <div class="col-xs-9 pull-right"><a href="">Add Photos / Videos</a></div>
+                    <div class="col-xs-2 pull-right"><img src="assets/img/plus.png" alt=""/></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <textarea name="" id="commentArea"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="">Public / Private</a>
+                </div>
+            </div>
+
+            <div class="row CommentWrap">
+                <div class="col-xs-1">
+                    <img src="assets/img/userTinyTeacher.png" alt=""/>
+                </div>
+                <div class="col-xs-11">
+                    <h5>Peter Parker (Teacher)</h5>
+                    <p>7 new students have scored above 95% on their last exams, excellent job!</p>
+                </div>
+            </div>
+            <div class="row CommentWrap">
+                <div class="col-xs-1">
+                    <img src="assets/img/userTiny.png" alt=""/>
+                </div>
+                <div class="col-xs-11">
+                    <h5>Madison Dish (Student)</h5>
+                    <p>I understand graphing but what is R1, M1 etc and how do I go about solving for those?</p>
+                </div>
+            </div>
+            <div class="row CommentWrap">
+                <div class="col-xs-1">
+                    <img src="assets/img/userTinyTeacher.png" alt=""/>
+                </div>
+                <div class="col-xs-11">
+                    <h5>Peter Parker (Teacher)</h5>
+                    <p>7 new students have scored above 95% on their last exams, excellent job!</p>
+                </div>
+            </div>
+            <div class="row CommentWrap">
+                <div class="col-xs-1">
+                    <img src="assets/img/userTiny.png" alt=""/>
+                </div>
+                <div class="col-xs-11">
+                    <h5>John Radﬁeld (Student)</h5>
+                    <p>Is this the same theory?</p>
+                    <iframe width="500" height="335" src="https://www.youtube.com/embed/CMWFmjlB8v0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-3">
+            <div class="courseWrap">
+                <h3>Open Classes</h3>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelGreen">
+                    </div>
+                    <div class="col-xs-5">
+                        Calculus
+                    </div>
+                    <div class="col-xs-6 text-right">10AM - 11AM</div>
+                </div>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelRed">
+                    </div>
+                    <div class="col-xs-5">
+                        Complex Numbers
+                    </div>
+                    <div class="col-xs-6 text-right">10AM - 11AM</div>
+                </div>
+            </div>
+            <div class="hDivider"></div>
+
+            <div class="courseWrap">
+                <h3>Starting Soon</h3>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelOrange">
+                    </div>
+                    <div class="col-xs-5">
+                        Calculus
+                    </div>
+                    <div class="col-xs-6 text-right">10AM - 11AM</div>
+                </div>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelRed">
+                    </div>
+                    <div class="col-xs-5">
+                        Complex Numbers
+                    </div>
+                    <div class="col-xs-6 text-right">10AM - 11AM</div>
+                </div>
+            </div>
+            <div class="hDivider"></div>
+
+            <div class="courseWrap">
+                <h3>My Registered Classes</h3>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelGreen">
+                    </div>
+                    <div class="col-xs-5">
+                        Calculus
+                    </div>
+                    <div class="col-xs-6 text-right">10AM - 11AM</div>
+                </div>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelBlue">
+                    </div>
+                    <div class="col-xs-5">
+                        Complex Numbers
+                    </div>
+                    <div class="col-xs-6 text-right">10AM - 11AM</div>
+                </div>
+                <img src="assets/img/FullClassSchedual.png" alt="" class="center-block" width="270"/>
+            </div>
+            <div class="hDivider"></div>
+
+            <div class="courseWrap">
+                <h3>Recent Quizzes</h3>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelGreen">
+                    </div>
+                    <div class="col-xs-5">
+                        Calculus
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        Level 3<span class="scoreGreen">87%</span>
+                    </div>
+                </div>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelRed">
+                    </div>
+                    <div class="col-xs-5">
+                        Complex Numbers
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        Level 3<span class="scoreGreen">68%</span>
+                    </div>
+                </div>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelGreen">
+                    </div>
+                    <div class="col-xs-5">
+                        Calculus
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        Level 3<span class="scoreGreen">90%</span>
+                    </div>
+                </div>
+                <div class="oneCourseWrap row">
+                    <div class="col-xs-1 labelGreen">
+                    </div>
+                    <div class="col-xs-5">
+                        Complex Numbers
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        Level 3<span class="scoreGreen">85%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hDivider"></div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/js/jquery1113.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootbox.min.js"></script>
+<script>
+    $(function () {
+        $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+        $('.tree li.parent_li > span').on('click', function (e) {
+            var children = $(this).parent('li.parent_li').find(' > ul > li');
+            if (children.is(":visible")) {
+                children.hide('fast');
+                $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+            } else {
+                children.show('fast');
+                $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+            }
+            e.stopPropagation();
+        });
+
+        $('.oneCourseWrap').on('click', function(event){
+            console.log();
+            bootbox.dialog({
+                message: '<iframe src="oneCourse.html" frameborder="0" width="1810px" height="800px"></iframe>',
+                title: $(event.target).html()
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
